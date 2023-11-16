@@ -1,0 +1,54 @@
+State Management
+-----------------
+What is State Mgt?
+State Mgt is a technique to pass data from one page to another page.
+
+Why State Mgt?
+As web applications use http/https as a protocol, these protocols are stateless, ie they donot keep the previous request data with them, we have 
+to explicity use some techniques to remember the data of the previous request, so we use state mgt.
+
+State Management Techniques:
+
+a) Client Side State Mgt: The data be stored on the client side, then we use client side state mgt techniques
+   1) ViewState: Whenever the data is to be passed from one control to another ON THE SAME PAGE.
+		It is a property of the control that uses StateBag to store the information about the control.
+            It is property which brings the data across round trips to the server.
+
+
+   2) Cookies: Whenever the data is to be passed between the pages.
+		A cookie file is a text file to store the data
+
+       Temperary
+       Persisted
+		----------------------------------------------------
+		*This may be used to store data on the client side with a limit.
+	        *60 cookies per domain and the total size(across all cookies) should be less than or equal to 4093 bytes.
+	        *Chrome browser not more than 400 days.
+		*Cookies need to be enabled in the browser
+                __________________________________________________________________
+ 
+
+   3) QueryString: Whenever the data is to be passed between the pages.
+		The data is seen in the address bar/url of the browser. So sensitive data gets exposed.
+      The query string limit is 2048 bytes.
+
+  
+
+b) Server Side State Mgt: The data be stored on the server side, then we use server side state mgt techniques
+   1) Session: Per User ----Private
+   2) Application: Per Application---Global/Public
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
